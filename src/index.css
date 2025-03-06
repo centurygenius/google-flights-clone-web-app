@@ -3,3 +3,26 @@
 @tailwind utilities; */
 
 @import "tailwindcss";
+
+.page-button {
+    background-color: whitesmoke;
+    margin-right: 5px;
+    width: 25px;
+    border: gray solid 2px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+.page-button:hover{
+    cursor: pointer;
+}
+
+.page-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#active {
+    background: yellow;
+}

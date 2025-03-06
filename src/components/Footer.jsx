@@ -2,20 +2,20 @@
 
 function Footer() {
     return (
-        <div className="container bg-blue-500 h-10 items-center flex gap-13  divide-x-4 divide-solid divide-white justify-center">
-            <div className="w-40">
+        <div className="bg-blue-500 py-2 flex flex-wrap justify-center items-center text-white text-center divide-x-0 sm:divide-x-4 divide-white">
+            <div className="w-full sm:w-1/2 md:w-auto px-4 py-1">
                 About Us   
             </div>
-            <div className="w-40 ">
+            <div className="w-full sm:w-1/2 md:w-auto px-4 py-1 ">
                 Contact us
             </div>
-            <div className="w-40 md:mr-1 md:py-1">
+            <div className="w-full sm:w-1/2 md:w-auto px-4 py-1">
                 Privacy Policy
             </div>
-            <div className="w-40 md:w-60 md:mr-1">
+            <div className="w-full sm:w-1/2 md:w-auto px-4 py-1">
                 Terms & conditions
             </div>
-            <div className="w-40 ">
+            <div className="w-full sm:w-1/2 md:w-auto px-4 py-1 ">
                 Blog
             </div>
         </div>

@@ -74,7 +74,7 @@ function Main(){
         }
     }
 
-    {/* ==== Handle form submission */}
+    {/* ==== Handle form submission ======= */}
     const handleSearch = async (e) => {
         e.preventDefault();
         console.log("From:", where);
@@ -127,8 +127,8 @@ function Main(){
 
                         {/* ===================== Form Section =========================== */}
 
-                        <form onSubmit={handleSearch} className="flex gap-2 md:flex-wrap sm:flex-wrap ">
-                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[242px]">
+                        <form onSubmit={handleSearch} className="flex gap-2 md:flex-wrap flex-wrap p-3 justify-center md:justify-start ">
+                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[240px]">
                                 <div className="flex  ml-2 ">
                                     <div className="w-5 flex items-center justify-center">
                                         <BiSolidPlaneAlt size={25} />
@@ -144,7 +144,7 @@ function Main(){
                                 </div>
                             </div>
 
-                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[242px]">
+                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[240px]">
                                 <div className="flex  ml-2 ">
                                     <div className="w-5 flex items-center justify-center">
                                         <BiSolidPlaneAlt size={25} />
@@ -160,7 +160,7 @@ function Main(){
                                 </div>
                             </div>
 
-                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[242px]">
+                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[240px]">
                                 <div className="flex  ml-2 ">
                                     <div className="w-5 flex items-center justify-center">
                                         <RiCalendarEventLine size={25} />
@@ -171,7 +171,7 @@ function Main(){
                                 </div>
                             </div>
 
-                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[242px]">
+                            <div className="border-solid border-2 rounded h-13 py-2 flex w-[240px]">
                                 <div className="flex  ml-2 ">
                                     <div className="w-5 flex items-center justify-center">
                                         <RiCalendarEventLine size={25} />
@@ -183,9 +183,9 @@ function Main(){
                             </div>
 
                             
-                            <button type="submit" className="bg-blue-500 h-13 flex items-center justify-center px-8 rounded text-white font-bold cursor-pointer">
+                            <button type="submit" className="bg-blue-500 h-13 flex items-center justify-center px-6 rounded text-white font-bold cursor-pointer">
                                 <FaPlaneDeparture className="mr-2" />
-                                { loading ? "Searching..." : "SEARCH" }
+                                SEARCH
                             </button>
                             {loading && <p className="text-red-700 font-bold text-3xl">Searching flights...</p>}
                         </form>
